@@ -1,1 +1,1 @@
-window.location.href="/htmlfolder/index.html"
+window.location.href="/Final work/Final-Work/htmlfolder/index.html"
