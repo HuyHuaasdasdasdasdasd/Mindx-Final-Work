@@ -1,0 +1,30 @@
+.card-img-top{
+    width: 300px !important;
+}
+.bi-fire{
+    color: orange;
+}
+.hanhan{
+    width: 150px;
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.hinh{
+    width: 588px !important;
+}
+.hai{
+    margin: 50px;
+}
+.title{
+    font-weight: bold;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+   text-align: center;
+   margin: 50px;
+}
+.hai{
+    position: relative;
+    left: 8rem
+}

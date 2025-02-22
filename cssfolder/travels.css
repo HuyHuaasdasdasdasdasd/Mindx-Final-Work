@@ -1,0 +1,21 @@
+ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: space-around;
+
+}
+.hanhan{
+width: 50%;
+display: block;
+}
+.bi-egg-fried{
+    color: orange;
+}
+.bi-globe-europe-africa{
+    color: blue;
+}
+.mot{
+    display: flex;
+}

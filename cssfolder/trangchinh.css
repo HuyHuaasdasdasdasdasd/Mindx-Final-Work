@@ -1,0 +1,121 @@
+.dautrang{
+    display: flex;
+    list-style: none;
+}
+.navbar-brand{
+    font-weight: bold !important;
+    font-size: 30px !important;
+}
+.loginandregister{
+    list-style:none;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+.tableofcontent{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 150px;
+}
+header{
+    position: relative;
+}
+.black_link{
+    color: black !important;
+}
+.card-header{
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.thongtinmot{
+    display: flex;
+    list-style: none;
+}
+.card-text{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.col{
+    border-style: solid;
+    border-width: 1px;
+}
+.socialm{
+    list-style: none;
+    font-weight: 500;
+    position: absolute;
+    left: 72px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.infoone{
+   padding-left: 100rem;
+}
+.card-img-top{
+    width: 600px !important;
+}
+.row{
+    position: relative;
+    justify-content: space-evenly;
+    right: 4rem;
+}
+.hanhan{
+    width: 10px !important;
+}
+.title{
+    font-weight: bold;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+   text-align: center;
+   margin: 50px;
+}
+footer{
+    background-color: #2A3335;
+    display: flex;
+    justify-content: space-evenly;
+}
+.aaa{
+    width: 10rem;
+    position: relative;
+
+}
+.bbb{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    color: white; 
+    margin-top: 3rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    width: 15rem;
+}
+.m{
+    padding: 1rem;
+}
+.r{
+    position: relative;
+    left: 10rem;
+}
+.white_link{
+    opacity: 0;
+    color:white !important;
+}
+.spacebetween{
+    background-color: lightslategray;
+    width: 100%;
+    height: 5rem;
+}
