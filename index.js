@@ -1,1 +1,0 @@
-window.location.href="/Final work/Final-Work/htmlfolder/index.html"
