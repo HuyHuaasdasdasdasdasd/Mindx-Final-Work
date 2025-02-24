@@ -81,11 +81,6 @@ header{
    text-align: center;
    margin: 50px;
 }
-footer{
-    background-color: #2A3335;
-    display: flex;
-    justify-content: space-evenly;
-}
 .aaa{
     width: 10rem;
     position: relative;
@@ -113,6 +108,11 @@ footer{
 .white_link{
     opacity: 0;
     color:white !important;
+}
+footer{
+    background-color: #2A3335;
+    display: flex;
+    justify-content: space-evenly;
 }
 .spacebetween{
     background-color: lightslategray;

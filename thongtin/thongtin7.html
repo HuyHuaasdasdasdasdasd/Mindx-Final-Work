@@ -1,5 +1,7 @@
-<link rel="stylesheet" href="/Final work/cssfolder/THONGTIN.css">
-<link rel="stylesheet" href="/Final work/cssfolder/title.css">
+<link rel="stylesheet" href="/cssfolder/THONGTIN.css">
+<link rel="stylesheet" href="/cssfolder/weather.css">
+<link rel="stylesheet" href="/cssfolder/title.css">
+<link rel="stylesheet" href="/cssfolder/footer.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +18,13 @@
                   <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><span><i class="bi bi-alphabet-uppercase"></i></span>News<i class="bi bi-bell"></i>
                     <ul class="tableofcontent">
-                      <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="index.html">
+                      <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="/index.html">
                           Home</a></li>
-                          <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="sport.html">
+                          <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="/htmlfolder/sport.html">
                               Sports</a></li>
-                              <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="Innovations.html">
+                              <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="/htmlfolder/Innovations.html">
                                   Innovations</a></li>
-                                  <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="travels.html">
+                                  <li class="homeone"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover black_link" href="/htmlfolder/travels.html">
                                       Travels</a></li>
                   </ul>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -36,7 +38,7 @@
                       <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                           <li class="nav-item">
-                            <a class="nav-link active black_link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active black_link" aria-current="page" href="/index.html">Home</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link black_link" href="sport.html">Sports</a>
@@ -73,8 +75,8 @@
                           <button class="btn btn-dark" type="submit"><span><i class="bi bi-search"></i></span></button>
                         </form>
                         <ul class="loginandregister">
-<a class="btn btn-dark" href="/Final work/signupandlogin/login.html"><i class="bi bi-person-check"></i>Login</a>
-<a class="btn btn-dark" href="/Final work/signupandlogin/signup.html"><i class="bi bi-person"></i>Register</a>                      
+<a class="btn btn-dark" style="color: white !important;" href="/signupandlogin/login.html"><i class="bi bi-person-check"></i>Login</a>
+<a class="btn btn-dark" style="color: white !important;" href="/signupandlogin/signup.html"><i class="bi bi-person"></i>Register</a>                      
                         </ul>
 <div id="root">
       <div class="weather_container">
@@ -115,6 +117,23 @@
         "In cardiology clinics, we see patients who complain of palpitations, and we used to have those tapes which we could stick on their chest and record their ECG over 24 hours," says Wamil. "Very frequently, patients may not have symptoms during those 24 hours. But with smartwatches, whenever the patient experiences symptoms, they can press a button on their watch, acquire an ECG and show that to us."
         Wamil says this is already leading to preventative treatment, enabling cardiologists to prescribe blood thinner tablets to patients with signs of an irregular heartbeat, to help prevent strokes. She is also interested in whether this data can be used to prevent some of the cardiovascular complications experienced by many type 2 diabetes patients. "The reason why people with diabetes have shorter lives is because they are much more at risk of developing heart problems," says Wamil. "We hope that in the future, this data could be used to detect early signs to alert the patient and doctor about their future risk of heart attacks and strokes."                
     </p>
-    <footer style="text-align: center; margin-top: 100px;">© 2024 <span><i class="bi bi-alphabet-uppercase"></i></span>News</footer>
-</body>
+    <footer>
+      <ul class="footer">
+        <li class="m">© 2025 <span><i class="bi bi-alphabet-uppercase"></i></span>News. The <span><i class="bi bi-alphabet-uppercase"></i></span>News is not responsible for the content of external sites.</li>
+        <li class="m">© 2025 BBC. All rights reserved.</li>
+        <li class="m">Bootstrap <br>
+          Code licensed MIT, docs CC BY 3.0. <br>
+          Currently v5.3.3.</li>
+      </ul>
+      <ul class="footer">
+        <h1 class="r">Links</h1>
+        <li class="m"><a href="/htmlfolder/index.html">Home</a></li>
+        <li class="m"><a href="/htmlfolder/sport.html">Sports</a></li>
+        <li class="m"><a href="/htmlfolder/Innovations.html">Innovations</a></li>
+        <li class="m"><a href="/htmlfolder/travels.html">Travels</a></li>
+      </ul>
+    </footer>
+    <script src="jsfolder/weather.js"></script>
+    <script src="jsfolder/weather_moment.js"></script>
+  </body>
 </html>

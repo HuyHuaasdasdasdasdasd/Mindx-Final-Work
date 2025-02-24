@@ -1,0 +1,25 @@
+.footer{
+    color: white; 
+    margin-top: 3rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    width: 15rem;
+}
+.m{
+    padding: 1rem;
+    color: white !important;
+}
+.r{
+    position: relative;
+    left: 10rem;
+}
+.white_link{
+    opacity: 0;
+    color:white !important;
+}
+footer{
+    background-color: #2A3335;
+    display: flex;
+    justify-content: space-evenly;
+}
