@@ -1,4 +1,5 @@
-.flex{
-    display: flex;
-    justify-content: space-evenly;
+#tren{
+    position: relative;
+    left:  3rem;
+    width: ;
 }
