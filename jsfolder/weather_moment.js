@@ -1,8 +1,4 @@
-//! moment.js
-//! version : 2.29.1
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
-//! license : MIT
-//! momentjs.com
+
 
 ;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -16,8 +12,7 @@
         return hookCallback.apply(null, arguments);
     }
 
-    // This is done to register the method called with moment()
-    // without creating circular dependencies.
+\
     function setHookCallback(callback) {
         hookCallback = callback;
     }
