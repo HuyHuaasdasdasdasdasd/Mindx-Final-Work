@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <img src="Screenshot 2025-02-08 at 2.05.33 PM.png" class="background" alt="">
-    <div class="login-container">
+<img src="Screenshot 2025-02-08 at 2.05.33 PM.png" class="background" alt="">
+<div class="login-container">
         <a class="navbar-brand" style="font-weight: bold; font-size: 40px;" href="#"><span><i class="bi bi-alphabet-uppercase"></i></span>News | Login</a>
         <form action="/login" method="post">
             <input type="text" id="username" name="username" placeholder="Username" required>
@@ -21,8 +21,14 @@
             <br><br>
             <button class="btn btn-primary" type="submit">Log In</button>
         </form>
+    <p style="color: lightslategray; position: relative; bottom: -1rem;">Or sign in with</p> <br>
+    <div style="display: flex; gap: 3rem;" class="siw">
+            <button class="auth" id="auth" ><i class="bi bi-google"></i></button>
+            <button class="auth"><i class="bi bi-facebook"></i></button>
+            <button class="auth" ><i class="bi bi-apple"></i></button>
     </div>
+</div>
     <img src="0ed7327e-f0a5-4d0c-a19f-5d0092547fd2.webp" alt="">
-    <script src="./login.js"></script>
+    <script type="module" src="./login.js"></script>
 </body>
 </html>

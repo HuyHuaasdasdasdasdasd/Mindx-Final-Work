@@ -17,10 +17,17 @@
         <input type="email" id="email" placeholder="Email" required>
         <input type="password" id="password" placeholder="Password" required>
         <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="login.html">Already Have An Account? <br> Login Here</a>
+        <a class="link-offset-2 link-underline link-underline-opacity-0" href="login.html">Already Have An Account? <br> Login Here <i class="bi bi-box-arrow-in-left"></i></a>
         <br><br>
         <button class="btn btn-primary" type="submit">Sign Up</button>
+        <p style="color: lightslategray; position: relative; bottom: -1rem;">Or sign in with</p> <br>
+        <div style="display: flex; gap: 3rem;" class="siw">
+            <button class="auth" id="auth" ><i class="bi bi-google"></i></button>
+            <button class="auth"><i class="bi bi-facebook"></i></button>
+            <button class="auth" ><i class="bi bi-apple"></i></button>
+        </div>
     </form>
-    <script src="./signup.js"></script>
+    
+    <script type="module" src="./signup.js"></script>
 </body>
 </html>
