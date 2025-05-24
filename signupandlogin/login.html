@@ -11,8 +11,10 @@
 </head>
 <body>
 <img src="Screenshot 2025-02-08 at 2.05.33 PM.png" class="background" alt="">
+<img src="dragon.png" class="dragon" alt="">
 <div class="login-container">
         <a class="navbar-brand" style="font-weight: bold; font-size: 40px;" href="#"><span><i class="bi bi-alphabet-uppercase"></i></span>News | Login</a>
+        <h1 class="welcome">Welcome<br>Back!</h1> 
         <form action="/login" method="post">
             <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="password" id="password" name="password" placeholder="Password" required>
@@ -21,14 +23,11 @@
             <br><br>
             <button class="btn btn-primary" type="submit">Log In</button>
         </form>
-    <p style="color: lightslategray; position: relative; bottom: -1rem;">Or sign in with</p> <br>
+    <p style="color: lightslategray; position: relative; bottom: -1rem;"><i class="bi bi-google"></i> Sign in with Google</p> <br>
     <div style="display: flex; gap: 3rem;" class="siw">
-            <button class="auth" id="auth" ><i class="bi bi-google"></i></button>
-            <button class="auth"><i class="bi bi-facebook"></i></button>
-            <button class="auth" ><i class="bi bi-apple"></i></button>
+            <button class="auth" id="auth" style="width: 50%; margin-left: auto; margin-right: auto;" ><i class="bi bi-google"></i></button>
     </div>
-</div>
-    <img src="0ed7327e-f0a5-4d0c-a19f-5d0092547fd2.webp" alt="">
+</div> 
     <script type="module" src="./login.js"></script>
 </body>
 </html>

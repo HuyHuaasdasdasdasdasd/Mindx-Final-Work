@@ -67,8 +67,8 @@ header{
 }
 .row{
     position: relative;
-    justify-content: space-evenly;
-    right: 4rem;
+    justify-content: space-around;
+    right: 5.4rem;
 }
 .hanhan{
     width: 10px !important;
@@ -78,8 +78,8 @@ header{
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
-   text-align: center;
-   margin: 50px;
+    text-align: center;
+    margin: 50px;
 }
 .aaa{
     width: 10rem;

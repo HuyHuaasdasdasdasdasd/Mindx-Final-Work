@@ -15,6 +15,7 @@ body {
     text-align: center;
     z-index: 10;
     position: absolute;
+    margin-top: 10px;
 }
 .login-container h2 {
     margin-bottom: 20px;
@@ -43,10 +44,12 @@ body {
 .login-container button:hover {
     background-color: #0056b3;
 }
-img{
+.background{
     z-index: 1;
     width: 100%;
     opacity: 0.5;
+    margin-left: 10rem;
+
 }
 .auth{
     background-color: white;
@@ -54,4 +57,16 @@ img{
     border-radius: 10px;
     height: 40px;
     width:100px;
+}
+.welcome{
+    position: relative;
+    color: black;
+    font-family:fantasy;
+}
+.dragon{
+    width: 8rem;
+    position: relative;
+    z-index: 100;
+    left: -36rem;
+    top: -10.2rem;
 }
