@@ -119,3 +119,12 @@ footer{
     width: 100%;
     height: 5rem;
 }
+.fl{
+    position: relative;
+    left: 66rem;
+    bottom: 34rem;
+}
+.img-fluid{
+    width: 15rem !important;
+    height: 11.8rem !important;
+}

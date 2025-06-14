@@ -41,34 +41,81 @@ async function displayProducts(){
     let des_first = document.getElementById('description_first')
     des_first.innerHTML = third.des
 
-
-     products.forEach((product,index) =>{
-        const productDiv = document.createElement("div");
-        if(index !== 0){
-            productDiv.innerHTML = `
-             <div class="col-6 col-md-4"><div class="card" style="width: 37.6rem;">
-                <img src="${product.img}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">${product.tit}</h5>
-                  <p class="card-text">${product.des}.</p>
-                  <a href="#" class="btn btn-dark" id="thongtinbutton" style="color: white !important;">Visit here</a>
-                </div>
+products.forEach((product,index) =>{
+  const productDiv = document.createElement("div");
+    if(index !== 0){
+      productDiv.innerHTML = `
+        <div class="row">
+          <div class="col-6 col-md-4"><div class="card" style="width: 37.6rem; position: relative; right: 19rem;">
+            <img src="${product.img}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">${product.tit}</h5>
+                <p class="card-text">${product.des}.</p>
+                <a href="#" class="btn btn-dark thongtinbutton" style="color: white !important;">Visit here</a>                </div>
               </div>
-            </div>`;
-            productList.appendChild(productDiv)
+            </div>
+          </div> 
+        </div>`;
 
-            const thongTinButton = document.getElementById('thongtinbutton')
-            thongTinButton.addEventListener("click", function () {
-              window.location.href = `../thongtin/thongtin20.html?id=${product.id}`
-            })
-        }
+productList.appendChild(productDiv)
+
+ const ttbtn = productDiv.querySelector(".thongtinbutton");
+    ttbtn.addEventListener("click", function () {
+        window.location.href = `../thongtin/thongtin20.html?id=${product.id}`;
+       })
+      }
     })
-}
+  }
 displayProducts()
 
 async function deleteProduct(productId){
-    await deleteDoc (doc(db, "Products", productId));
+    await deleteDoc (doc(db, "Outside", productId));
     alert("Product deleted successfully");
     window.location.reload();
 }
 
+
+async function getProducts() {
+  const results = await getDocs(collection(db, "Side"));
+  const productss = [];
+
+  results.forEach((doc) => {
+    productss.push({ id: doc.id, ...doc.data() });
+  });
+
+  return productss;
+}
+
+async function displayProducts2() {
+  const productSideList = document.getElementById("sidenews");
+
+  const productss = await getProducts(); 
+
+  productss.forEach((product, index) => {
+    if (index >= 0) {
+      const productDiv2 = document.createElement("div");
+      productDiv2.innerHTML = `
+        <div class="row g-0 card" style="max-width: 500px; max-height: 190px;">
+          <div class="col-md-4">
+            <img src="${product.img}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">${product.tit}</h5>
+              <p class="card-text">${product.des}</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      `;
+
+      productSideList.appendChild(productDiv2);
+
+      productDiv2.addEventListener("click", function () {
+        window.location.href = `../thongtin/thongtin1.html?id=${product.id}`;
+      });
+    }
+  });
+}
+
+displayProducts2(); 
