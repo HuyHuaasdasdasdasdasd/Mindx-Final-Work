@@ -61,18 +61,12 @@ productList.appendChild(productDiv)
 
  const ttbtn = productDiv.querySelector(".thongtinbutton");
     ttbtn.addEventListener("click", function () {
-        window.location.href = `../thongtin/thongtin20.html?id=${product.id}`;
+        window.location.href = `../thongtin/thongtintrans.html?id=${product.id}`;
        })
       }
     })
   }
 displayProducts()
-
-async function deleteProduct(productId){
-    await deleteDoc (doc(db, "Outside", productId));
-    alert("Product deleted successfully");
-    window.location.reload();
-}
 
 
 async function getProducts() {
@@ -112,7 +106,7 @@ async function displayProducts2() {
       productSideList.appendChild(productDiv2);
 
       productDiv2.addEventListener("click", function () {
-        window.location.href = `../thongtin/thongtin1.html?id=${product.id}`;
+        window.location.href = `../thongtin/thongtinside.html?id=${product.id}`;
       });
     }
   });

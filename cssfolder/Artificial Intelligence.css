@@ -1,4 +1,12 @@
-#tren{
+.custom-style-twelve{
     position: relative;
-    left:  3rem;
+    left: 45.5rem;
+    bottom: 31.8rem;
+}
+.big{
+    margin: 13rem;
+    width: 60rem; 
+    position: relative;
+    bottom: 10rem;
+    left: 0.5rem;
 }

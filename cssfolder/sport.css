@@ -28,3 +28,8 @@
     position: relative;
     left: 8rem;
 }
+.custom-style-one{
+    position: relative;
+    left: 80vh;
+    bottom: 44vh;
+}

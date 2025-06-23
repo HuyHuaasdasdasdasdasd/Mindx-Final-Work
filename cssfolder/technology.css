@@ -1,16 +1,12 @@
-.card-title{
-    font-weight: bold;
-    font-size: 50px;
-    color: black !important;
+.custom-style-fourteen{
+    position: relative;
+    left: 45.5rem;
+    bottom: 36rem;
 }
-.card-text{
-    color: aqua;
-    font-size: bold;
-}
-.col-sm-8{
-    width: 800px !important;
-}
-.col-sm-4{
-    margin: 50px;
-    width: 30rem;
+.big{
+    margin: 13rem;
+    width: 60rem; 
+    position: relative;
+    bottom: 15rem;
+    left: 0.5rem;
 }

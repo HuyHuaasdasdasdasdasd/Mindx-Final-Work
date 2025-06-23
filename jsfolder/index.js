@@ -51,9 +51,77 @@ async function displayProducts2() {
       productSideList.appendChild(productDiv2);
 
       productDiv2.addEventListener("click", function () {
-        window.location.href = `../thongtin/thongtin1.html?id=${product.id}`;
+        window.location.href = `../thongtin/thongtinside.html?id=${product.id}`;
       });
     }
   });
 }
 displayProducts2(); 
+
+async function getProduct() {
+    const result = await getDocs(collection(db, "Thongtin"));
+    const products = [];
+    console.log(result)
+    result.forEach((doc) => {
+        products.push({ id : doc.id, ...doc.data()});
+    })
+    return products;
+}
+console.log(getProduct())
+
+async function displayProducts(){
+    const productList = document.getElementById("row");
+
+    const products = await getProduct();
+    const first = products[10]
+    let title = document.getElementById('title')
+    title.innerHTML = first.tit
+
+    let img = document.getElementById('img')
+    img.srcset = first.img1
+
+    let des = document.getElementById('des')
+    des.innerHTML = first.des
+
+    products.forEach((product, index) => {
+  if (index === 5 || index === 0) {
+    const productDiv = document.createElement("div");
+
+    const customClass = index === 5 ? "custom-style-zero" : "custom-style-five";
+
+    productDiv.innerHTML = `
+      <div class="row ${customClass}">
+        <div class="col-6 col-md-4">
+          <div class="card" style="width: 37.6rem; position: relative; right: 17rem;">
+            <img src="${product.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${product.tit}</h5>
+              <p class="card-text">${product.des}.</p>
+              <a href="#" class="btn btn-dark thongtinbutton" style="color: white !important;">Visit here</a>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    productList.appendChild(productDiv)
+
+    const ttbtn = productDiv.querySelector(".thongtinbutton");
+    ttbtn.addEventListener("click", function () {
+        window.location.href = `../thongtin/thongtinmain.html?id=${product.id}`;
+       })
+    title.addEventListener("click", function () {
+      window.location.href = `../thongtin/thongtinmain.html?id=${first.id}`;
+    })
+    des.addEventListener("click", function () {
+      window.location.href = `../thongtin/thongtinmain.html?id=${first.id}`;
+    })
+      }
+    })
+  };
+displayProducts()
+
+let radio = document.getElementById("radio")
+radio.addEventListener("click", function () {
+  console.log("Rate button clicked");
+  alert("Thanks for giving us your opinion");
+  prompt("Would you want to express your opinion?");
+});

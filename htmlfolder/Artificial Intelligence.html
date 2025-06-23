@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../cssfolder/Artificial Intelligence.css">
 <link rel="stylesheet" href="../cssfolder/index.css">
 <link rel="stylesheet" href="../cssfolder/title.css">
-<link rel="stylesheet" href="../cssfolder/weather.css">
+<link rel="stylesheet" href="../cssfolder/weather.css"><link rel="stylesheet" href="../cssfolder/rate.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,72 +98,97 @@
     </div>
   </nav>
   </header>
-  <img src="download (21).jpeg" style="z-index: 1; width: 100%; opacity: 0.2; position: fixed;" width="100%" alt="">
+  <img src="download (21).jpeg" style="z-index: 1; width: 100%; opacity: 0.2; position: fixed;" alt="">
   <div style="z-index: 10; position: relative; bottom: 1rem;">
  <br><br><br>
  <h1 class="title"><i class="bi bi-alphabet-uppercase"></i>News | Artificial Intelligence</h1>
  <br><br><br>
  <div class="container text-center">
-  <div class="row" id="tren">
-    <div class="col">
-      <div class="card" style="width: 30rem;">
-        <img src="https://ichef.bbci.co.uk/images/ic/1376xn/p0k1jkw4.jpg.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">How Google tells you what you want to hear</h5>
-          <p class="card-text">Ask the same question two different ways, and Google may have different answers.</p> <br><br>
-          <a href="../thongtin/thongtin10.html" class="btn btn-dark" style="color: white !important;">See More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 30rem;">
-        <img src="https://ichef.bbci.co.uk/images/ic/1376x774/p0jnt7g2.jpg.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">What we've learned since the biggest oil spill in US history</h5>
-          <p class="card-text">Fourteen years after the BP Deepwater Horizon disaster, would we fare any better at cleaning up another huge oil spill?</p>
-          <a href="../thongtin/thongtin11.html" class="btn btn-dark" style="color: white !important;">See more</a>
-        </div>
-      </div>
-    </div>
+  <div class="row" id="row" style="position: relative; left: 3rem;">
   </div>
   <div class="row">
-    <div class="col">
-    </div>
-    <div class="col" style="margin: 100px;">
-      <div class="card" style="width: 60rem; position: relative; right:2rem">
-        <img src="https://ichef.bbci.co.uk/images/ic/1376xn/p0k15x7q.jpg.webp" class="card-img-top" alt="...">
+    <div class="col big">
+      <div class="card">
+        <img src="https://ichef.bbci.co.uk/images/ic/1376xn/p0k15x7q.jpg.webp" class="card-img-top" id="img" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Why Amazon's latest AI is named after a dog</h5>
-          <p class="card-text">Amazon has called its latest AI assistant Rufus. But what is the story behind this unusual moniker and how does it compare to the way other AIs have been named?</p>
-          <a href="../thongtin/thongtin12.html" class="btn btn-dark" style="color: white !important;">See more</a>
+          <h5 class="card-title" id="title"></h5>
+          <p class="card-text" id="des"></p>
+          <a href="../thongtin/thongtinmain.html?id=sVfkyjaS5Uee6tjCMFRx" class="btn btn-dark" style="color: white !important;">See more</a>
         </div>
       </div>
     </div>
-    <div class="col">
-    </div>
   </div>
 </div>
-</div>
-</div>
-</div>
 <footer>
-  <ul class="footer">
-    <li class="m">© 2025 <span><i class="bi bi-alphabet-uppercase"></i></span>News. The <span><i class="bi bi-alphabet-uppercase"></i></span>News is not responsible for the content of external sites.</li>
-    <li class="m">© 2025 BBC. All rights reserved.</li>
-    <li class="m">Bootstrap <br>
-      Code licensed MIT, docs CC BY 3.0. <br>
-      Currently v5.3.3.</li>
-  </ul>
-  <ul class="footer">
-    <h1 class="r">Links</h1>
-    <li class="m"><a href="../index.html">Home</a></li>
-    <li class="m"><a href="sport.html">Sports</a></li>
-    <li class="m"><a href="Innovations.html">Innovations</a></li>
-    <li class="m"><a href="travels.html">Travels</a></li>
-  </ul>
+      <ul class="footer">
+        <li class="m">© 2025 <span><i class="bi bi-alphabet-uppercase"></i></span>News. The <span><i class="bi bi-alphabet-uppercase"></i></span>News is not responsible for the content of external sites.</li>
+        <li class="m">© 2025 BBC. All rights reserved.</li>
+        <li class="m">Bootstrap <br>
+          Code licensed MIT, docs CC BY 3.0. <br>
+          Currently v5.3.3.</li>
+      </ul>
+      <ul class="footer">
+        <h1 class="r">Links</h1>
+        <li class="m"><a href="../htmlfolder/index.html">Home</a></li>
+        <li class="m"><a href="../htmlfolder/sport.html">Sports</a></li>
+        <li class="m"><a href="../htmlfolder/Innovations.html">Innovations</a></li>
+        <li class="m"><a href="../htmlfolder/travels.html">Travels</a></li>
+      </ul>
 </footer>
+    <div class="rate" style="background-color: #2A3335; z-index: 10;">
+      <br><br>
+  <h1 style="font-size: 80px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; position: relative; bottom: 1rem; left: 28.5rem;">Rate our page</h1>
+    <div class="radio" id="radio">
+      <input id="rating-5" type="radio" name="rating" value="5" />
+      <label for="rating-5" title="5 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-4" type="radio" name="rating" value="4" />
+      <label for="rating-4" title="4 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-3" type="radio" name="rating" value="3" />
+      <label for="rating-3" title="3 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-2" type="radio" name="rating" value="2" />
+      <label for="rating-2" title="2 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+      <input id="rating-1" type="radio" name="rating" value="1" />
+      <label for="rating-1" title="1 star">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+    </div><br><br>
+</div> 
+</div>
 <script src="/jsfolder/weather.js"></script>
 <script src="/jsfolder/weather_moment.js"></script>
+<script src="../jsfolder/rate.js"></script>
+<script type="module" src="../jsfolder/Artificial Intelligence.js"></script>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../cssfolder/technology.css">
 <link rel="stylesheet" href="../cssfolder/index.css">
 <link rel="stylesheet" href="../cssfolder/title.css">
-<link rel="stylesheet" href="../cssfolder/weather.css">
+<link rel="stylesheet" href="../cssfolder/weather.css"><link rel="stylesheet" href="../cssfolder/rate.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,65 +98,96 @@
     </div>
   </nav>
   </header>
+  <img src="data:image/jpeg;base64,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" style="z-index: 1; width: 100%; opacity: 0.2; position: fixed;" alt="">
+  <div style="z-index: 10; position: relative; bottom: 1rem;">
     <br><br><br>
     <h1 class="title"><i class="bi bi-alphabet-uppercase"></i>News | Technology</h1>
-    <div class="container text-center">
-  <div class="row">
-    <div class="col-sm-8"><div class="card text-bg-dark">
-      <img src="https://ichef.bbci.co.uk/images/ic/1920x1080/p0k06gpd.jpg.webp" class="card-img" alt="...">
-      <div class="card-img-overlay">
-        <h5 class="card-title"><a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="../thongtin/thongtin7.html">
-          How smartwatches are saving lives</a></h5>
-           <p class="card-text"><mark>Smartwatches gather vast amounts of data about our physiology. Now their technology is being harnessed like never before.</mark></p>
-        <p class="card-text"><small><mark>Mon Oct 28 | Future</mark</small></p>
-      </div>
+    <br><br><br>
+       <div class="container text-center">
+    <div class="row" id="row" style="position: relative; left: 0.5rem;">
     </div>
-  </div>
-    <div class="col-sm-4"><div class="card" style="width: 40rem;">
-      <div class="card-body mothai">
-        <h5 class="card-title"><a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="../thongtin/thongtin8.html">
-          Twitter’s former CEO has a new app that looks a lot like Twitter</a></h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary"><img src="https://media.cnn.com/api/v1/images/stellar/prod/230428112716-bluesky-app-restricted.jpg?q=w_1110,c_fill/f_webp" style="width: 35rem;" alt=""></h6>
-        <p class="card-text" style="color: black; font-size: 20px; font-weight: bold;">The app, which launched in a closed beta on iOS in February and on Android this month, runs on a decentralized network which provides users with more control over how the service is run, data is stored, and content is moderated...</p>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-sm"></div>
-    <div class="col-sm"></div>
-    <div class="col-sm"><div class="card text-center">
-      <div class="card-header">
-        Thu December 28, 2023
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">China’s Xiaomi dreams of building a car ‘as good as’ Porsche and Tesla </h5>
-        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231228074632-01-xiaomi-office-101021-restricted.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" style="width: 40rem;" alt="">
-        <p class="card-text" style="color: black; font-size: 20px; font-weight: bold;">
-          Xiaomi has unveiled its first electric car, just days after Huawei launched another one of its own, showing that the efforts of Chinese tech giants to join the electric vehicle race are beginning to bear fruit...</p>
-        <a href="../thongtin/thongtin9.html" class="btn btn-light">Visit here! <i class="bi bi-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+     <div class="row">
+       <div class="col big">
+         <div class="card" style="width: 60rem; position: relative; right:2rem">
+           <img src="" id="img" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title" id="title"></h5>
+             <p class="card-text" id="des"></p>
+             <a href="../thongtin/thongtinmain.html?id=dk2LiCvoX9k3V9V0vo5t" class="btn btn-dark" style="color: white !important;">See more</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
 <footer>
-  <ul class="footer">
-    <li class="m">© 2025 <span><i class="bi bi-alphabet-uppercase"></i></span>News. The <span><i class="bi bi-alphabet-uppercase"></i></span>News is not responsible for the content of external sites.</li>
-    <li class="m">© 2025 BBC. All rights reserved.</li>
-    <li class="m">Bootstrap <br>
-      Code licensed MIT, docs CC BY 3.0. <br>
-      Currently v5.3.3.</li>
-  </ul>
-  <ul class="footer">
-    <h1 class="r">Links</h1>
-    <li class="m"><a href="../index.html">Home</a></li>
-    <li class="m"><a href="sport.html">Sports</a></li>
-    <li class="m"><a href="Innovations.html">Innovations</a></li>
-    <li class="m"><a href="travels.html">Travels</a></li>
-  </ul>
-</footer>
+      <ul class="footer">
+        <li class="m">© 2025 <span><i class="bi bi-alphabet-uppercase"></i></span>News. The <span><i class="bi bi-alphabet-uppercase"></i></span>News is not responsible for the content of external sites.</li>
+        <li class="m">© 2025 BBC. All rights reserved.</li>
+        <li class="m">Bootstrap <br>
+          Code licensed MIT, docs CC BY 3.0. <br>
+          Currently v5.3.3.</li>
+      </ul>
+      <ul class="footer">
+        <h1 class="r">Links</h1>
+        <li class="m"><a href="../htmlfolder/index.html">Home</a></li>
+        <li class="m"><a href="../htmlfolder/sport.html">Sports</a></li>
+        <li class="m"><a href="../htmlfolder/Innovations.html">Innovations</a></li>
+        <li class="m"><a href="../htmlfolder/travels.html">Travels</a></li>
+      </ul>
+    </footer>
+    <div class="rate" style="background-color: #2A3335;">
+      <br><br>
+  <h1 style="font-size: 80px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; position: relative; bottom: 1rem; left: 28.5rem;">Rate our page</h1>
+    <div class="radio" id="radio">
+      <input id="rating-5" type="radio" name="rating" value="5" />
+      <label for="rating-5" title="5 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-4" type="radio" name="rating" value="4" />
+      <label for="rating-4" title="4 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-3" type="radio" name="rating" value="3" />
+      <label for="rating-3" title="3 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+
+      <input id="rating-2" type="radio" name="rating" value="2" />
+      <label for="rating-2" title="2 stars">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+      <input id="rating-1" type="radio" name="rating" value="1" />
+      <label for="rating-1" title="1 star">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          ></path>
+        </svg>
+      </label>
+    </div><br><br>
+</div>
+</div>
 <script src="/jsfolder/weather.js"></script>
 <script src="/jsfolder/weather_moment.js"></script>
+<script src="../jsfolder/rate.js"></script>
+<script type="module" src="../jsfolder/technology.js"></script>
 </body>
 </html>
