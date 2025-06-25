@@ -29,7 +29,7 @@ async function displayProducts(){
     const productList = document.getElementById("row");
     const products = await getProduct();
     
-    const first = products[15]
+    const first = products[16]
     let title = document.getElementById('title')
     title.innerHTML = first.tit
 
@@ -40,14 +40,14 @@ async function displayProducts(){
     des.innerHTML = first.des
 
     products.forEach ((product, index) => {
-  if (index === 13 || index === 14) {
+  if (index === 15 || index === 14) {
     const productDiv = document.createElement("div");
 
     const customClass = index === 14 ? "custom-style-fourteen" : "custom-style-thirteen";
 
     productDiv.innerHTML = `
       <div class="col ${customClass}">
-      <div class="card" style="width: 35rem;">
+      <div class="card" style="width: 35rem; position: relative; bottom: 30rem">
         <img src="${product.img}" class="card-img-top" style="width: 35rem;" alt="...">
         <div class="card-body">
           <h5 class="card-title">${product.tit}</h5>

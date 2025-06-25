@@ -73,7 +73,7 @@ async function displayProducts(){
     const productList = document.getElementById("row");
 
     const products = await getProduct();
-    const first = products[10]
+    const first = products[11]
     let title = document.getElementById('title')
     title.innerHTML = first.tit
 

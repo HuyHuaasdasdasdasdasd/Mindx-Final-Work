@@ -29,7 +29,7 @@ async function displayProducts(){
     const productList = document.getElementById("row");
     const products = await getProduct();
     
-    const first = products[11]
+    const first = products[12]
     let title = document.getElementById('title')
     title.innerHTML = first.tit
 
@@ -47,7 +47,7 @@ async function displayProducts(){
 
     productDiv.innerHTML = `
       <div class="col ${customClass}">
-      <div class="card" style="width: 30rem;">
+      <div class="card" style="width: 30rem; position: relative; top: 6rem;">
         <img src="${product.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${product.tit}</h5>

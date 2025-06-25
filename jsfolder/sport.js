@@ -37,10 +37,10 @@ async function displayProducts(){
     des.innerHTML = first.des
 
     products.forEach((product, index) => {
-  if (index === 1 || index === 19) {
+  if (index === 1 || index === 20) {
     const productDiv = document.createElement("div");
 
-    const customClass = index === 19 ? "custom-style-one" : "custom-style-nineteen";
+    const customClass = index === 20 ? "custom-style-one" : "custom-style-twenty";
 
     productDiv.innerHTML = `
       <div class="col ${customClass}">
