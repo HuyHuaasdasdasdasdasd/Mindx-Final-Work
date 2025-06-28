@@ -25,6 +25,7 @@ async function getProducts() {
   return productss;
 }
 
+
 async function displayProducts2() {
   const productSideList = document.getElementById("sidenew");
 
